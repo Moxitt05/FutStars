@@ -1,0 +1,54 @@
+# Dependencias
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.iml
+.project
+.classpath
+.settings/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+*.log
+
+# Variables de entorno (IMPORTANTE: no subir claves)
+.env
+.env.local
+.env.production
+application-local.properties
+
+# Cobertura y testing
+coverage/
+.nyc_output/
+jacoco.exec
+
+# Astro
+.astro/
+dist/
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+hs_err_pid*
