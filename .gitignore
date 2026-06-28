@@ -1,20 +1,31 @@
-# Dependencias
+# ============================================
+# DEPENDENCIAS
+# ============================================
 node_modules/
 .pnp/
 .pnp.js
 
-# Build outputs
+# ============================================
+# BUILD OUTPUTS
+# ============================================
 dist/
 build/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
-# Entornos virtuales
+# Astro
+.astro/
+
+# ============================================
+# ENTORNOS VIRTUALES
+# ============================================
 .venv/
 env/
 venv/
 
+# ============================================
 # IDE
+# ============================================
 .idea/
 .vscode/
 *.swp
@@ -24,31 +35,55 @@ venv/
 .project
 .classpath
 .settings/
+.springBeans
+.factorypath
 
-# Sistema operativo
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
 .DS_Store
 Thumbs.db
 *.log
 
-# Variables de entorno (IMPORTANTE: no subir claves)
+# ============================================
+# VARIABLES DE ENTORNO (CRÍTICO PARA SEGURIDAD)
+# ============================================
 .env
+*.env
 .env.local
 .env.production
+.env.development
 application-local.properties
+application-dev.properties
+application-prod.properties
+src/main/resources/application.properties.bak
 
-# Cobertura y testing
+# ============================================
+# COBERTURA Y TESTING
+# ============================================
 coverage/
 .nyc_output/
 jacoco.exec
 
-# Astro
-.astro/
-dist/
-
-# Java
+# ============================================
+# JAVA
+# ============================================
 *.class
 *.jar
 *.war
 *.nar
 *.ear
 hs_err_pid*
+
+# ============================================
+# DATOS LOCALES
+# ============================================
+*.db
+*.sqlite
+data/
+
+# ============================================
+# DOCUMENTACIÓN GENERADA
+# ============================================
+docs/generated/
+javadoc/
